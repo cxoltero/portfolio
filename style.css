@@ -80,6 +80,7 @@ html, body{
 	width: 500px;
 	vertical-align: top;
 	height: 600px;
+	padding:10px;
 }
 
 #main-container .section h2{
@@ -87,3 +88,30 @@ html, body{
 	padding: 20px 40px;
 }
 
+#homeSection{
+	text-align: center;
+	padding-top: 150px !important;
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+	width: 450px !important;
+	text-align: center;
+	/*overflow: hidden;*/
+	overflow-y: scroll;
+	height: 100%;
+}
+
+#homeSection #init-desc{
+	color: #444;
+	font-size: 22px;
+	font-style: italic;
+}
+
+.separator{
+	background-image: url(../images/separador.png);
+	height: 30px;
+	background-position: center center;
+}
+
+#homeSection #sep-video{
+	padding: 10px;
+}
