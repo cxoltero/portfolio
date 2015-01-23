@@ -71,7 +71,6 @@ html, body{
 	width: 2600px;
 	display: inline-block;
 	margin-left:20%;
-	text-align: center;
 }
 
 #main-container .section{
@@ -79,25 +78,27 @@ html, body{
 	display: inline-block;
 	width: 500px;
 	vertical-align: top;
-	height: 600px;
+	height: 700px;
 	padding:10px;
+	overflow: hidden;
+	overflow-y: scroll;
+
 }
 
 #main-container .section h2{
 	border-bottom: dotted 1px #ccc;
 	padding: 20px 40px;
+	text-align: center;
 }
 
 #homeSection{
 	text-align: center;
-	padding-top: 150px !important;
+	padding-top: 100px !important;
 	padding-left: 25px !important;
 	padding-right: 25px !important;
 	width: 450px !important;
 	text-align: center;
-	/*overflow: hidden;*/
-	overflow-y: scroll;
-	height: 100%;
+	box-sizing: border-box;
 }
 
 #homeSection #init-desc{
@@ -107,11 +108,49 @@ html, body{
 }
 
 .separator{
-	background-image: url(../images/separador.png);
+	background-image: url(images/separador.png);
 	height: 30px;
 	background-position: center center;
 }
 
 #homeSection #sep-video{
 	padding: 10px;
+}
+
+/*****************************************************************************************/
+								/*WORK SECTION*/
+/*****************************************************************************************/
+p{
+	font-size: 14px;
+	line-height: 26px;
+	margin-top: -5px;
+}
+
+.feed-icon{
+	float: left;
+	padding-right: 10px;
+	width: 50px;
+}
+
+#posts a{
+	color: green;
+}
+
+.rss-container{
+	/*text-align: center;*/
+	border-bottom: dotted 2px #e0deca;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.rss-container:hover{
+	background-color: #E0DECA;
+}
+
+.rss-container img{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 30px;
 }

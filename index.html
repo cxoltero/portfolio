@@ -43,6 +43,14 @@
 		<iframe width="400" height="275" src="http://www.youtube.com/embed/s0MDY9fl-IA" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div><!--  Section  -->
+	<div class="section" id="blogSection">
+		<h2>Blog</h2>
+		<p><img src="images/feed.png" alt="" class="feed-icon">
+		This are the last entries from my blog. Here you can find out a little more about
+		all the subjects that I like to talk about. Here are the latest posts.</p>
+		<div id="posts">
+		</div>
+	</div><!--  Section  -->
 	<div class="section" id="aboutSection">
 		<h2>About</h2>
 	</div><!--  Section  -->
@@ -52,10 +60,16 @@
 	<div class="section" id="contactSection">
 		<h2>Contact</h2>
 	</div><!--  Section  -->
-	<div class="section" id="blogSection">
-		<h2>Blog</h2>
-	</div><!--  Section  -->
+
 </div><!--Main Menu-->
+<script src="jquery.js"></script>
 <script src="main.js"></script>
+<script src="jquery.rss.js"></script>
+
+<script>
+$(document).on("ready", function(){
+	$("#posts").blogRSS("http://www.vidamrr.com/feeds/posts/default?alt=json-in-script&callback=?");
+});
+</script>
 </body>
 </html>
